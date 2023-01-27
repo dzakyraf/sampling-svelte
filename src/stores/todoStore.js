@@ -11,8 +11,8 @@ export const loadTodos = async () => {
 }
 loadTodos();
 
-export const addTodo = async (text, user_id) => {
-    const {data, error} = await supabase.from('todo').insert([{text, user_id}]);
+export const addTodo = async (name, company_name, phone_no) => {
+    const {data, error} = await supabase.from('sampling_kickoff').insert([{name, company_name,phone_no}]);
     
     if(error) {
         return console.error(error);
