@@ -2,23 +2,25 @@
 	"name": "svelte-kit-todo-app-with-tailwind",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "svelte-kit dev",
-		"build": "svelte-kit build",
-		"preview": "svelte-kit preview",
-		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
-		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
+		"dev": "vite dev",
+		"build": "vite build",
+		"deploy": "touch build/.nojekyll && gh-pages -d build -t true"
 	},
 	"devDependencies": {
-		"@sveltejs/kit": "next",
+		"@sveltejs/adapter-netlify": "^1.0.0-next.88",
+		"@sveltejs/adapter-static": "1.0.5",
+		"@sveltejs/kit": "",
 		"autoprefixer": "^10.4.0",
 		"eslint": "^7.32.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^3.2.1",
+		"gh-pages": "^5.0.0",
 		"postcss-cli": "^9.0.2",
 		"prettier": "^2.4.1",
 		"prettier-plugin-svelte": "^2.4.0",
 		"svelte": "^3.42.6",
-		"tailwindcss": "^2.2.19"
+		"tailwindcss": "^2.2.19",
+		"vite": "^4.0.4"
 	},
 	"type": "module",
 	"dependencies": {

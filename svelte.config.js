@@ -1,20 +1,16 @@
-/** @type {import('@sveltejs/kit').Config} */
-import adapter from '@sveltejs/adapter-netlify';
+// import adapter from "@sveltejs/adapter-static";
+import netlify from "@sveltejs/adapter-netlify";
+// +const netlify = require('@sveltejs/adapter-netlify')
 
+/** @type {import('@sveltejs/kit').Config} */
 const config = {
-	kit: {
-		// default options are shown
-		adapter: adapter({
-		  // if true, will create a Netlify Edge Function rather
-		  // than using standard Node-based functions
-		  edge: false,
-	 
-		  // if true, will split your app into multiple functions
-		  // instead of creating a single one for the entire app.
-		  // if `edge` is true, this option cannot be used
-		  split: false
-		})
-	  }
+  kit: {
+	adapter: netlify()
+    // adapter: adapter(),
+    // paths: {
+    //   base: process.env.NODE_ENV === "production" ? "/sveltekit-gh-pages" : "",
+    // },
+  },
 };
 
 export default config;

@@ -37,7 +37,7 @@ Illustration from undraw.co by the amazing Katerina Limpitsouni
         </div> -->
       </div>
       <div class="  text-center">
-        <img src="../../static/sampl3.inc logo_BW-01.png" width="260" >
+        <img src="https://staging.digas.id/logo.png" alt="logo" width="260" >
       </div>
     </div>
     <form class="form " on:submit|preventDefault={handleSubmit}>
