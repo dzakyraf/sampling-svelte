@@ -23,7 +23,7 @@
 A sample contact us page form written with tailwind css
 Illustration from undraw.co by the amazing Katerina Limpitsouni
 -->
-<body class="bg-gray-800 text-gray-100 px-8 py-5">
+<body class="bg-gray-800 text-gray-100 px-8 ">
   <div class="flex items-center justify-center text-center w-full justify-center">
    
   </div>
